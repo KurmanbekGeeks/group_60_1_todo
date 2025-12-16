@@ -1,0 +1,13 @@
+-- database: ./todo.db
+
+SELECT * FROM tasks;
+
+INSERT INTO tasks (task) VALUES ('Сходить за обедом');
+
+UPDATE tasks SET completed = 1 WHERE id = 22;
+
+DELETE FROM tasks WHERE id = 23;
+
+
+ALTER TABLE tasks ADD COLUMN completed INTEGER DEFAULT 0;
+
